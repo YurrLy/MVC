@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Filme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Detalhes do Filme</h1>
+        <div class="card">
+            <img src="<%= filme.cartaz %>" class="card-img-top" alt="Cartaz do Filme">
+            <div class="card-body">
+                <h5 class="card-title"><%= filme.titulo %></h5>
+                <p class="card-text"><strong>Sinopse:</strong> <%= filme.sinopse %></p>
+                <p class="card-text"><strong>Elenco:</strong> <%= filme.elenco %></p>
+                <p class="card-text"><strong>Direção:</strong> <%= filme.direcao %></p>
+            </div>
+        </div>
+        <a href="/filmes" class="btn btn-primary">Voltar</a>
+    </div>
+</body>
+</html>

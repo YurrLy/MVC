@@ -1,7 +1,30 @@
 {
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "projeto mvc",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YurrLy/MVC.git"
+  },
+  "author": "Yuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YurrLy/MVC/issues"
+  },
+  "homepage": "https://github.com/YurrLy/MVC#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.3.1",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
   }
 }
