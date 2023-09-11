@@ -8,6 +8,11 @@
 </head>
 <body>
     <div class="container mt-5">
+        <% if (mensagem) { %>
+            <div class="alert alert-success">
+                <%= mensagem %>
+            </div>
+            <% } %>
         <h1>Olá, <%= nomeUsuario %>!</h1>
         <p>Bem-vindo ao seu perfil.</p>
         <p>Opções:</p>
