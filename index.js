@@ -8,7 +8,6 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
@@ -242,7 +241,7 @@ app.post('/filme/apagar/:id', requireLogin, async (req, res) => {
 
 app.use(express.static('public'));
 
-app.listen(port, () => {
-  console.log(`Servidor está rodando em http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor está rodando em ${process.env.PORT}`);
 });
 
